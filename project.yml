@@ -1,0 +1,33 @@
+# Toolchain version
+version: 1.0
+
+# Project Settings
+project:
+  type: "wrt"
+  name: "Mikesoft Live Messenger"
+  
+# Compiler settings
+compiler:
+  name: wrtc
+  options:
+    useBabel: true
+    useTerser: true
+    startupClass: GUIApplication
+    entryFile: ./src/main.js
+    
+# Hacky things
+hacks:
+  shiftArgv: false
+  
+# Outputs configuration
+outputs:
+  bin:
+    artifactName: livemessenger
+    spec:
+      friendlyName: Mikesoft Live Messenger
+      description: A Windows 96 Live Messenger program.
+      author: nolanwhy, Kelbaz, plopilpy
+      copyright: Copyright (C) nolanwhy 2024.
+      subsys: gui
+      version: 1
+      icon: C:/local/livemessenger/icon.png
